@@ -26,10 +26,10 @@ def agregarCitas():
     hora = input("\tHora HH:MM : ")
     motivo = input("\tMotivo de la consulta : ")
     cita={
-        "Nombre": nombre,
-        "Fecha": fecha,
-        "Hora": hora,
-        "Motivo": motivo
+        "nombre": nombre,
+        "fecha": fecha,
+        "hora": hora,
+        "motivo": motivo
         }
     citas.append(cita)
     print(citas) 
