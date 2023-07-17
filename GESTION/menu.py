@@ -2,10 +2,8 @@ import os
 import citas
 
 if (__name__=='__main__'):
-    flag = True
     opcion = 0
-    
-    while flag:
+    while True:
         os.system('clear')
         print('*'*35)
         print(' ------ GESTION DE CITAS ------- ')
@@ -26,5 +24,7 @@ if (__name__=='__main__'):
         elif (opcion == "4"):
             citas.cancelarCita()
         elif (opcion == "5"):
-            Print("Un gusto Ayudarte :)")
-            flag = False
+            input("Un gusto Ayudarte :)\n\tVuelva Pronto!")
+            break
+        else:
+            print("Opcion no valida")
